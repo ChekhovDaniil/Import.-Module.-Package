@@ -1,2 +1,3 @@
-# *5. Создать рядом с файлом main.py модуль dirty_main.py и импортировать все функции с помощью конструкции (необязательное задание).
-# from package.module import *
+from application.salary import *
+from db.people import *
+from main import *
