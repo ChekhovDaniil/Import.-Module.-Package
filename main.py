@@ -1,16 +1,16 @@
 # Найти интересный для себя пакет на pypi и в файле requirements.txt указать его с актуальной версией. При желании можно написать программу с этим пакетом.
 import pyfiglet
-from colorama import Fore, Style, init
+from colorama import Fore, init
 from datetime import datetime
 
-from db.people import get_people
+from db.people import get_employees
 from application.salary import calculate_salary
 
 
 if __name__ == "__main__":
 
     # получаем данные о человеке если таковой имеется в списке
-    print(get_people('Alice'))
+    print(get_employees('Alice'))
 
     # Высчтываем зарплату из оклада и бонуса в процентах
     print(calculate_salary(5000, 10))
